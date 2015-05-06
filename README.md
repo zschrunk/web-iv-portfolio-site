@@ -1,4 +1,4 @@
-2665-portfolio-site
+web-iv-portfolio-site
 ===================
 
-Fall 2014 Web IV Portfolio Sites
+Web IV Portfolio Sites
