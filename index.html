@@ -11,18 +11,19 @@
 
 <body>
 <header>
-  <nav>
-    <ul>
-      <li><a href="">Home</a></li>
-      <li><a href="">Work</a></li>
-      <li><a href="">About</a></li>
-      <li><a href="">Contact</a></li>
-    </ul>
+<div class="contain-to-grid sticky">
+  <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: [small,medium,large]">
+      <a href="#home">HOME</a>
+      <a href="#work">WORK</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
   </nav>
+</div>
 </header>
+<a name="#home"><!--<h1>LOGO</h1>--></a>
 <section>
-  <div class="large-12 columns">
-  	<h2>WORK</h2>
+  <div class="large-12 columns text-center">
+  	<a name="work"><h2>WORK</h2></a>
   </div>
   <div class="row">
   	<div class="large-12 columns"> <img src="http://placehold.it/1000x350" alt=""> </div>
@@ -46,17 +47,42 @@
   </div>
   </section>
 <section>
-  <div class="large-12 columns">
-    <h2>ABOUT</h2>
+  <div class="large-12 columns text-center">
+    <a name="about"><h2>ABOUT</h2></a>
   </div>
-  <div class="large-6 columns">
+  <div class="large-6 large-centered columns">
     <p>I am a graphic designer, car lover, and a sports enthusiast. I like energetic work that shows movement through geometry and work that shows boldness through high contrast. Communicating intensity and the dauntless ambition of your strategy to your audience is my favorite part of designing, because it is a good feeling when your design hits that audience and it does what it was intended to do. As a designer I’m versatile in my work, though I tend to work towards more print oriented work.</p>
   </div>
 </section>
 <section>
-  <div class="large-12 columns">
-    <h2>CONTACT</h2>
+  <div class="large-12 columns text-center">
+    <a name="contact"><h2>CONTACT</h2></a>
   </div>
+  <form>
+  <div class="row">
+  <div class="large-7 columns">
+    <div class="large-6 columns">
+      <label>
+        <input type="text" placeholder="NAME"/>
+      </label>
+    </div>
+    <div class="large-6 columns">
+      <div class="row collapse">
+        <label>
+          <input type="text" placeholder="EMAIL"/>
+        </label>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+    <div class="large-7 columns">
+      <label>
+        <input type="text" placeholder="MESSAGE"/>
+      </label>
+    </div>
+  </div>
+  </form>
 </section>
 <section> 
   <!--Footer--> 

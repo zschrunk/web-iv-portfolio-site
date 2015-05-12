@@ -3,36 +3,63 @@
 <head>
 <meta charset="UTF-8">
 <title>Shen Café</title>
-<link href="../style/main.css">
+<link rel="stylesheet" href="../style/css/foundation.css">
+<link rel="stylesheet" href="../style/custom.css"/>
+<script src='../style/js/vendor/modernizr.js'></script>
 </head>
 
 <body>
-	<header>
-    	<nav>
-        	<ul>
-            	<li><a href="">Home</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+<div class="contain-to-grid sticky">
+  <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: [small,medium,large]">
+      <a href="#home">HOME</a>
+      <a href="#work">WORK</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+  </nav>
+</div>
+</header>
     
     <section>
+    	<div class="medium-12 columns text-center">
     	<h2>PROJECT</h2>
+        </div>
+        <div class="medium-6 medium-centered columns">
         <h3>Shen Café</h3>
         <h4>Ad Campaign</h4>
         <p>This on has two posters, a handout, along with the billboard and an online ad. The idea behind this campaign was to show that Shen Café is a family friendly restaurant with a modern feel.
 Target Audience: Younger families around the age of 25–35. They have kids that are younger. They have disposable income to spend on eating out.</p>
+</div>
     </section>
     <section>
+    	<div class="medium-12 columns text-center">
     	<h2>PROCESS</h2>
+        </div>
     </section>
     <section>
+    	<div class="medium-12 columns text-center">
     	<h2>MORE</h2>
+        </div>
+          <div class="row">
+  	<div class="medium-6 columns"> <img src="http://placehold.it/500x250" alt=""> </div>
+  	<div class="medium-6 columns"> <img src="http://placehold.it/500x250" alt=""> </div>
+  </div>
+  <div class="row">
+  <div class="medium-2 columns">
+  <a href="#" class="button">PREVIOUS PROJECT</a>
+  </div>
+  <div class="medium-2 columns">
+  <a href="#" class="button">NEXT PROJECT</a>
+  </div>
+  </div>
     </section>
     <section>
     <!--Footer-->
     </section>
+<script src='../style/js/vendor/jquery.js'></script> 
+<script src="../style/js/foundation.min.js"></script>
+<script>
+	$(document).foundation();
+</script>
 </body>
 </html>
