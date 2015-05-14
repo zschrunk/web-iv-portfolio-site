@@ -1,3 +1,254 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/*Ignore me, I'm just page styling*/
+html {font-family: 'Roboto', sans-serif;font-size:16px;height:100%;}
+body {
+    margin:25px 0;
+    background: #ffffff;
+    background: -moz-linear-gradient(-45deg, #ffffff 0%, #ffffff 50%, #F2F2F2 50%, #F2F2F2 50%, #F2F2F2 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#ffffff), color-stop(50%,#ffffff), color-stop(50%,#F2F2F2), color-stop(50%,#F2F2F2), color-stop(100%,#F2F2F2));
+    background: -webkit-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+    background: -o-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+    background: -ms-linear-gradient(-45deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+    background: linear-gradient(135deg, #ffffff 0%,#ffffff 50%,#F2F2F2 50%,#F2F2F2 50%,#F2F2F2 100%);
+}
+
+ul, li {margin:0;padding:0;}
+a {text-decoration:none;}
+
+h1 {font-size:1.5em;text-align:center;margin:55px 0;}
+
+header {
+    height:115px;
+}
+
+header .container {
+    padding:0 5%;
+}
+
+a#logo {
+    width:215px;
+    height:98px;
+    background:#2196f3;
+    display:block;
+    float:left;
+    text-indent:-9999px;
+}
+
+nav#navigation {
+    height:38px;
+    float:right;
+    position:relative;
+    margin-top: 30px;
+    width:65%;
+}
+
+nav#navigation .nav-trigger {
+    display:none;
+    position:absolute;
+    top:0;
+    right:0;
+    width:38px;
+    height:38px;
+    background:#212121;
+    overflow:hidden;
+    text-indent:100%;
+    white-space:nowrap;
+    z-index:11;
+    cursor:pointer;
+}
+
+nav#navigation ul li {
+    float:left;
+    list-style:none;
+    text-align:center;
+    width:24%;
+    margin-left:1%;
+}
+
+nav#navigation ul li a {
+    text-align:center;
+    display:block;
+    color:#000;
+    padding:10px 0;
+    border-radius:5px;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s;
+}
+
+nav#navigation ul li.current a {
+    background:#CCC;
+    color:#FFF;
+}
+
+nav#navigation ul li a:hover {
+    background:#2196f3;
+    color:#ffffff;
+}
+
+@media only screen and (max-width : 900px) {
+nav#navigation {
+    position:absolute;
+    width:90%;
+}
+
+nav#navigation .nav-trigger {
+    display:block;
+}
+
+nav#navigation .nav-trigger span {
+    position:absolute;
+    display:block;
+    width:20px;
+    height:2px;
+    background:#FFF;
+    top:18px;
+    left:50%;
+    margin-left:-10px;
+    -webkit-transition:background .5s;
+    -moz-transition:background .5s;
+    transition:background .5s;
+}
+
+nav#navigation .nav-trigger span::before,.nav-trigger span::after {
+    content:'';
+    position:absolute;
+    left:0;
+    background:inherit;
+    width:100%;
+    height:100%;
+    -webkit-transform:translateZ(0);
+    -moz-transform:translateZ(0);
+    -ms-transform:translateZ(0);
+    -o-transform:translateZ(0);
+    transform:translateZ(0);
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s;
+}
+
+nav#navigation .nav-trigger span::before {
+    top:-6px;
+    -webkit-transform:rotate(0);
+    -moz-transform:rotate(0);
+    -ms-transform:rotate(0);
+    -o-transform:rotate(0);
+    transform:rotate(0);
+}
+
+nav#navigation .nav-trigger span::after {
+    bottom:-6px;
+    -webkit-transform:rotate(0);
+    -moz-transform:rotate(0);
+    -ms-transform:rotate(0);
+    -o-transform:rotate(0);
+    transform:rotate(0);
+}
+
+nav#navigation .nav-trigger.open span {
+    background:rgba(255,255,255,0);
+}
+
+nav#navigation .nav-trigger.open span::before,.nav-trigger.open span::after {
+    background:#FFF;
+}
+
+nav#navigation .nav-trigger.open span::before {
+    top:0;
+    -webkit-transform:rotate(135deg);
+    -moz-transform:rotate(135deg);
+    -ms-transform:rotate(135deg);
+    -o-transform:rotate(135deg);
+    transform:rotate(135deg);
+}
+
+nav#navigation .nav-trigger.open span::after {
+    bottom:0;
+    -webkit-transform:rotate(225deg);
+    -moz-transform:rotate(225deg);
+    -ms-transform:rotate(225deg);
+    -o-transform:rotate(225deg);
+    transform:rotate(225deg);
+}
+
+nav#navigation ul {
+    width:100%;
+    position:absolute;
+    right:0;
+    top:38px;
+    background:#212121;
+    visibility:hidden;
+    z-index:50;
+    -webkit-backface-visibility:hidden;
+    backface-visibility:hidden;
+    -webkit-transform:scale(0);
+    -moz-transform:scale(0);
+    -ms-transform:scale(0);
+    -o-transform:scale(0);
+    transform:scale(0);
+    -webkit-transform-origin:100% 0;
+    -moz-transform-origin:100% 0;
+    -ms-transform-origin:100% 0;
+    -o-transform-origin:100% 0;
+    transform-origin:100% 0;
+    -webkit-transition:-webkit-transform 0.5s,visibility 0 .5s;
+    -moz-transition:-webkit-transform 0.5s,visibility 0 .5s;
+    transition:-webkit-transform 0.5s,visibility 0 .5s;
+}
+
+nav#navigation ul.is-visible {
+    visibility:visible;
+    -webkit-transform:scale(1);
+    -moz-transform:scale(1);
+    -ms-transform:scale(1);
+    -o-transform:scale(1);
+    transform:scale(1);
+    -webkit-transition:-webkit-transform 0.5s,visibility 0 0;
+    -moz-transition:-moz-transform 0.5s,visibility 0 0;
+    transition:transform 0.5s,visibility 0 0;
+}
+
+nav#navigation ul.is-visible li a {
+    visibility:visible;
+}
+
+nav#navigation ul li {
+    width:50%;
+    margin:0;
+}
+
+nav#navigation ul li a {
+    width:100%;
+    padding:10px 0;
+    color:#FFF;
+    visibility:hidden;
+    border-radius:0;
+}
+
+nav#navigation ul li a:hover {
+    border:0;
+}
+
+nav#navigation ul li.last a {
+    background:none;
+    border:0;
+    display:block;
+    padding:15px 0;
+    color:#FFF;
+    font-size:.8em;
+}
+
+nav#navigation ul li.last a:hover {
+    border:0;
+}
+}
+
+@media only screen and (max-width : 500px) {
+nav#navigation ul li {
+    width:100%;
+}
+}
