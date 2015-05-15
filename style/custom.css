@@ -1,8 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-/*Ignore me, I'm just page styling*/
-html {font-family: 'Roboto', sans-serif;font-size:16px;height:100%;}
+
 body {
     margin:25px 0;
     background: #ffffff;
@@ -17,7 +16,7 @@ body {
 ul, li {margin:0;padding:0;}
 a {text-decoration:none;}
 
-h1 {font-size:1.5em;text-align:center;margin:55px 0;}
+
 
 header {
     height:115px;
@@ -27,14 +26,6 @@ header .container {
     padding:0 5%;
 }
 
-a#logo {
-    width:215px;
-    height:98px;
-    background:#2196f3;
-    display:block;
-    float:left;
-    text-indent:-9999px;
-}
 
 nav#navigation {
     height:38px;
@@ -84,7 +75,7 @@ nav#navigation ul li.current a {
 }
 
 nav#navigation ul li a:hover {
-    background:#2196f3;
+    background:black;
     color:#ffffff;
 }
 
