@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Shen Café</title>
+<script src='../scripts/jquery-2.1.4.min.js'></script>
 <link rel="stylesheet" href="../style/css/foundation.css">
 <link rel="stylesheet" href="../style/custom.css"/>
 <script src='../style/js/vendor/modernizr.js'></script>
@@ -10,14 +11,17 @@
 
 <body>
 <header>
-<div class="contain-to-grid sticky">
-  <nav class="top-bar" data-topbar role="navigation" data-options="sticky_on: [small,medium,large]">
-      <a href="../index.html#home">HOME</a>
-      <a href="../index.html#work">WORK</a>
-      <a href="../index.html#about">ABOUT</a>
-      <a href="../index.html#contact">CONTACT</a>
-  </nav>
-</div>
+	<div class="container">
+		<nav id="navigation">
+		<div class="nav-trigger">Menu<span></span></div>
+			<ul class="menu">
+				<li><a href="../index.html#home" title="Link">HOME</a></li>
+				<li><a href="../index.html#work" title="Link">WORK</a></li>
+				<li><a href="../index.html#about" title="Link">ABOUT</a></li>
+				<li><a href="../index.html#contact" title="Link">CONTACT</a></li>
+			</ul>
+		</nav>
+	</div>
 </header>
   <div class="row">
   	<div class="large-12 columns"> <a href=""> <img src="http://placehold.it/1000x350" alt=""> </a> </div>
@@ -65,13 +69,23 @@ Target Audience: Younger families around the age of 25–35. They have kids that
         </div>
           <div class="row">
   	<div class="medium-6 columns"> <a href=""> <img src="http://placehold.it/500x250" alt=""> </a> </div>
-  	<div class="medium-6 columns"> <a href=""> <img src="http://placehold.it/500x250" alt=""> </a> </div>
-  </div>
-  <div class="row">
-  <div class="medium-2 columns">
+      <div class="row show-for-small-only">
+  <div class="small-2 small-offset-4 columns">
   <a href="#" class="button">PREVIOUS PROJECT</a>
   </div>
-  <div class="medium-2 columns">
+  </div>
+  	<div class="medium-6 columns"> <a href=""> <img src="http://placehold.it/500x250" alt=""> </a> </div>
+    <div class="row show-for-small-only">
+      <div class="small-2 small-offset-4 columns end">
+  <a href="#" class="button">NEXT PROJECT</a>
+  </div>
+  </div>
+  </div>
+  <div class="row hidden-for-small-only">
+  <div class="medium-2 medium-offset-2 columns">
+  <a href="#" class="button">PREVIOUS PROJECT</a>
+  </div>
+  <div class="medium-2 medium-offset-4 columns end">
   <a href="#" class="button">NEXT PROJECT</a>
   </div>
   </div>
