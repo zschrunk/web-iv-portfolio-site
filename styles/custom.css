@@ -52,7 +52,7 @@ h2{
 	opacity: 1;
 	transform: scale(1);
 }
-h3 {
+h3, h4 {
 	color: white;
 }
 .background-image {
