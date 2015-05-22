@@ -1,12 +1,31 @@
 @charset "UTF-8";
 /* CSS Document */
 
-h2{
-	margin-top: 250px;
-	margin-bottom: 250px;
+body{
+	font: normal 100 20pt "proxima-nova", sans-serif;
+}
+
+h2 {
+  font: normal 900 75pt "proxima-nova-extra-condensed", sans-serif;
+  position:relative;
+  font-size:80px;
+  line-height:80px;
+  color: white;
+  text-transform: uppercase;
+}
+h2 img {
+  width:100%;
+}
+span {
+  position: absolute;
+  width:100%;
+  text-align:center;
+  top:50%;
+  margin-top:-40px;
 }
 
 .overlay {
+	margin-bottom: 75px;
 	width: auto;
 	height: auto;
 	position: relative;
@@ -17,7 +36,7 @@ h2{
 }
 .overlay .magnifier {
 	display: block;
-	background: rgba(36,102,177,0.6);
+	background: rgba(36,102,177,0.7);
 	position: absolute;
 	text-align: center;
 	left: 0;
@@ -56,15 +75,13 @@ h3, h4 {
 	color: white;
 }
 .background-image {
-	z-index: -1;
+	z-index: -10;
 	margin: 0;
-}
-.project-image {
-	margin-top: -2158px;
 }
 .triangles {
 	height: 250px;
 }
+
 ul, li {
 	margin: 0;
 	padding: 0;
