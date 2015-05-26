@@ -4,6 +4,11 @@
 body {
 	font: normal 100 20pt "proxima-nova", sans-serif;
 }
+
+.about{
+	margin: 100px 0px 100px;
+}
+
 h2 {
 	font: normal 900 75pt "proxima-nova-extra-condensed", sans-serif;
 	position: relative;

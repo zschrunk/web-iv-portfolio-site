@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Zak's Design</title>
+<title>Zak&rsquo;s Design</title>
 <script src="scripts/jquery-2.1.4.min.js"></script>
 <link rel="stylesheet" href="styles/foundation.css">
 <link rel="stylesheet" href="styles/custom.css"/>
@@ -29,8 +29,7 @@
 </div>
 <a name='home'><img src="images/zak-logo.svg" alt="zak design"></a>
 <section>
-  <div class="medium-12 small-12 columns text-center"> 
-<!--<img src="images/section-angles.svg" alt="section-angles">-->
+  <div class="medium-12 small-12 columns text-center">
     <a name="work">
     <h2>
       <span>Work</span>
@@ -38,16 +37,21 @@
     </h2>
    </a>
     </div>
-  <div class="triangles">  
+    
+    
+    <div class="triangles">
+    	<img data-interchange="[images/triangle-small.svg, (small)], [images/triangle-medium.svg, (medium)], [images/triangle-large.svg, (large)]">
+	</div>
+ <!-- <div class="triangles">  
     <img src="images/triangle.svg" alt="background triangles"/>
-  </div>
+  </div>-->
   <div class="row">
     <div class="medium-12 small-12 columns">
       <div class="overlay"> <a href="projects/shen-cafe.html"><img src="http://placehold.it/1000x350" alt=""/>
         <div class="magnifier">
           <div class="content">
-            <h3>Ad Campaign</h3>
-            <h4>Shen Cafe</h4>
+            <h3>Shen Caf&eacute;</h3>
+            <h4>Ad Campaign</h4>
           </div>
         </div>
         </a>
@@ -149,12 +153,12 @@
     <a name="about">
     <h2>
       <span>About</span>
-      <img src="images/section-angles.svg">
+      <img src="images/section-angles-flipped.svg">
     </h2>
    </a>
     </div>
   <div class="medium-6 small-12 medium-centered columns">
-    <p>I am a graphic designer, car lover, and a sports enthusiast. I like energetic work that shows movement through geometry and work that shows boldness through high contrast. Communicating intensity and the dauntless ambition of your strategy to your audience is my favorite part of designing, because it is a good feeling when your design hits that audience and it does what it was intended to do. As a designer I’m versatile in my work, though I tend to work towards more print oriented work.</p>
+    <p class="about">I am a graphic designer, car lover, and a sports enthusiast. I like energetic work that shows movement through geometry and work that shows boldness through high contrast. Communicating intensity and the dauntless ambition of your strategy to your audience is my favorite part of designing, because it is a good feeling when your design hits that audience and it does what it was intended to do. As a designer I’m versatile in my work, though I tend to work towards more print oriented work.</p>
   </div>
 </section>
 <section>
@@ -204,8 +208,10 @@
     </div>
   </div>
 </footer>
+
 <script src="scripts/vendor/jquery.js"></script> 
 <script src="scripts/foundation.min.js"></script> 
+<script src="scripts/foundation/foundation.interchange.js"></script>
 <script>
 	$(document).foundation();
 </script>
