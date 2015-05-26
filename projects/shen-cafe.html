@@ -6,7 +6,7 @@
 <script src='../scripts/jquery-2.1.4.min.js'></script>
 <link rel="stylesheet" href="../styles/foundation.css">
 <link rel="stylesheet" href="../styles/custom.css"/>
-<script src='../style/js/vendor/modernizr.js'></script>
+<script src='../scripts/js/vendor/modernizr.js'></script>
 </head>
 
 <body>
@@ -34,8 +34,8 @@
                 <img src="../images/section-angles.svg">
             </h2>
     	</div>
-        <div class="triangles">  
-          <img src="../images/triangle-large.svg" alt="background triangles"/>
+        <div class="triangles">
+          <img data-interchange="[../images/triangle-small.svg, (small)], [../images/triangle-medium.svg, (medium)], [../images/triangle-large.svg, (large)]">
   		</div>
         <div class="medium-6 small-12 medium-centered columns">
         <h3>Shen Caf&eacute;</h3>
@@ -191,8 +191,9 @@ Target Audience: Younger families around the age of 25–35. They have kids that
   </div>
  </div>
 </footer>
-<script src='../style/js/vendor/jquery.js'></script> 
-<script src="../style/js/foundation.min.js"></script>
+<script src="../scripts/vendor/jquery.js"></script> 
+<script src="../scripts/foundation.min.js"></script>
+<script src="../scripts/foundation/foundation.interchange.js"></script>
 <script>
 	$(document).foundation();
 </script>
