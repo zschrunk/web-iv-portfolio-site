@@ -93,8 +93,12 @@ p{
 }
 
 .social-media{
-	margin: 10px;
+	margin-top: 100px;
 	width: 73px;
+}
+
+.contact-form{
+	margin-top: 100px;
 }
 
 ul, li {
@@ -120,7 +124,7 @@ footer{
 	color: white;
 	position: relative;
 	z-index: 9999;
-	margin-top: 125px;
+	margin-top: 100px;
 	padding: 110px 0px 100px;
 }
 
