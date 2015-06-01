@@ -21,6 +21,10 @@ h3, h4 {
 	color: white;
 }
 
+.project-title h3, h4{
+	color: black;
+}
+
 .project-image{
 	margin: 50px auto 75px;
 }
@@ -103,9 +107,13 @@ p{
 }
 
 input[type="text"], input[type="email"], textarea{
-	border-color: white;
-	border-width: 2px;
+	border-color: #2466b1;
+	border-width: 1px;
 	box-shadow: none;
+}
+
+textarea{
+	height: 100px;
 }
 
 ::-webkit-input-placeholder {
@@ -141,6 +149,11 @@ a:hover{
 
 header .container {
 	padding: 0 5%;
+}
+
+form .button{
+	backgroun-color: #2466b1;
+	color: white;
 }
 
 footer{
