@@ -101,13 +101,17 @@ p{
 	width: 73px;
 }
 
+.path-facebook:hover, .path-twitter:hover, .path-instagram:hover, .path-linkedin:hover{
+	fill: #26c1e5;
+}
+
 /*contact form*/
 .contact-form{
 	margin-top: 100px;
 }
 
 input[type="text"], input[type="email"], textarea{
-	border-color: #2466b1;
+	border-color: #c7e6ed;
 	border-width: 1px;
 	box-shadow: none;
 }
@@ -131,6 +135,15 @@ textarea{
 :-ms-input-placeholder {  
    color: #26c1e5;  
 }
+
+form .button{
+	background-color: #2466b1;
+	color: white;
+}
+
+form .button:hover{
+	background-color: #26c1e5;
+}
 /*contact form end*/
 
 ul, li {
@@ -149,11 +162,6 @@ a:hover{
 
 header .container {
 	padding: 0 5%;
-}
-
-form .button{
-	backgroun-color: #2466b1;
-	color: white;
 }
 
 footer{
