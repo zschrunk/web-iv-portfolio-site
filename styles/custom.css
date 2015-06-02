@@ -140,12 +140,12 @@ textarea{
    color: #26c1e5;  
 }
 
-form .button{
+.button{
 	background-color: #2466b1;
 	color: white;
 }
 
-form .button:hover{
+.button:hover{
 	background-color: #26c1e5;
 }
 /*contact form end*/

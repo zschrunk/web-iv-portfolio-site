@@ -197,16 +197,16 @@
       <div class="hide-for-small-only">
         <div class="medium-5 medium-offset-1 columns end">
           <div class="contact-form">
-            <form>
+            <form method="post" action="contact-engine.php">
               <div class="large-12 columns">
-                <input type="text" name="name" placeholder="NAME">
-                <input type="text" name="email" placeholder="EMAIL">
+                <input type="text" name="Name" id="Name" placeholder="NAME">
+                <input type="text" name="Email" id="Email" placeholder="EMAIL">
               </div>
               <div class="large-12 columns">
-                <textarea type="text" name="message" placeholder="MESSAGE ME"></textarea>
+                <textarea type="text" name="Message" id="Message" placeholder="MESSAGE ME"></textarea>
               </div>
               <div class="large-7 columns end">
-                <a role="button" aria-label="submit form" href="#" class="button">Send Message</a>
+                <input type="submit" name="submit" value="Send Message" class="button expand submit-button" />
               </div>
             </form>
           </div>
