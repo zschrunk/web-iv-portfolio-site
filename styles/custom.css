@@ -25,8 +25,12 @@ h3, h4 {
 	color: black;
 }
 
-.project-image{
-	margin: 50px auto 75px;
+.project-title h3{
+	margin-top: 100px;
+}
+
+.process-img{
+	margin-top: 100px;
 }
 
 
@@ -92,7 +96,7 @@ span {
 	height: 0px;
 }
 
-p{
+.about p{
 	margin: 100px 0px 100px;
 }
 
@@ -162,6 +166,20 @@ a:hover{
 
 header .container {
 	padding: 0 5%;
+}
+
+.more-img{
+	margin-top: 100px
+}
+
+#more .button{
+	background-color: #2466b1;
+	color: white;
+	margin-top: 25px;
+}
+
+#more .button:hover{
+	background-color: #26c1e5;
 }
 
 footer{
@@ -248,7 +266,7 @@ nav#navigation .nav-trigger span {
 	display: block;
 	width: 20px;
 	height: 2px;
-	background: #2466b1;
+	background:#FFF;
 	top: 18px;
 	left: 50%;
 	margin-left: -10px;
@@ -294,7 +312,7 @@ nav#navigation .nav-trigger.open span {
 	background: rgba(255,255,255,0);
 }
 nav#navigation .nav-trigger.open span::before, .nav-trigger.open span::after {
-	background: #FFF;
+	background: #FFFFF;
 }
 nav#navigation .nav-trigger.open span::before {
 	top: 0;
@@ -380,5 +398,10 @@ nav#navigation ul li.last a:hover {
 @media only screen and (max-width : 500px) {
 nav#navigation ul li {
 	width: 100%;
+}
+
+.social-media{
+	margin: 100px auto;
+	width: 73px;
 }
 }
