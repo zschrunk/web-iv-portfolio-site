@@ -1,37 +1,154 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Imagine Art</title>
-<link href="../style/main.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <title>Imagine Art</title>
+  <script src='../scripts/jquery-2.1.4.min.js'></script>
+  <link rel="stylesheet" href="../styles/foundation.css">
+  <link rel="stylesheet" href="../styles/custom.css" />
+  <script src='../scripts/js/vendor/modernizr.js'></script>
+  <script>
+    try {
+      Typekit.load();
+    } catch (e) {}
+  </script>
 </head>
 
 <body>
-	<header>
-    	<nav>
-        	<ul>
-            	<li><a href="">Home</a></li>
-                <li><a href="">Work</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section>
-    	<h2>PROJECT</h2>
-        <h3>Imagine Art</h3>
-        <h4>Style Guide</h4>
-        <p></p>
-    </section>
-    <section>
-    	<h2>PROCESS</h2>
-    </section>
-    <section>
-    	<h2>MORE</h2>
-    </section>
-    <section>
-    <!--Footer-->
-    </section>
+  <div class="large-12 columns">
+    <div class="container fixed">
+      <nav id="navigation">
+        <div class="nav-trigger">Menu<span></span></div>
+        <ul class="menu">
+          <li><a href="../index.html#home" title="Link">Home</a></li>
+          <li><a href="../index.html#work" title="Link">Work</a></li>
+          <li><a href="../index.html#about" title="Link">About</a></li>
+          <li><a href="../index.html#contact" title="Link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row project-image">
+    <div class="large-12 small-12 columns">
+      <a href=""> <img src="http://placehold.it/1000x350" alt=""> </a>
+    </div>
+  </div>
+
+  <section>
+    <div class="medium-12 small-12 columns text-center">
+      <h2 class="header">
+        <span>Project</span>
+        <img src="../images/section-angles.svg">
+      </h2>
+    </div>
+    <div class="triangles">
+      <img data-interchange="[../images/triangle-small.svg, (small)], [../images/triangle-medium.svg, (medium)], [../images/triangle-large-project.svg, (large)]">
+    </div>
+    <div class="medium-6 small-12 medium-centered columns clearfix project-title">
+      <h3>Imagine Art</h3>
+      <h4>Logo with Style Guide</h4>
+      <p>ESPN is a sport company that has a TV station along with a magazine. They needed their featured story to be laid out within 10 pages, but still keeping it visually interesting. ESPN wanted a layout that a viewer would want to read and not skim past it. They are targeting younger athletes from 18 to 25 years old, who are interested in other success stories.</p>
+    </div>
+  </section>
+  <section id="process">
+    <div class="medium-12 small-12 columns text-center">
+      <h2 class="header">
+        <span>Process</span>
+        <img src="../images/section-angles-flipped.svg">
+      </h2>
+    </div>
+    <div class="row process-img clearfix">
+      <div class="medium-12 small-12 columns">
+        <img src="http://placehold.it/1000x350" alt="" />
+      </div>
+    </div>
+    <div class="row process-img">
+      <div class="medium-6 small-12 columns">
+        <img src="http://placehold.it/500x350" alt="">
+      </div>
+      <div class="medium-6 small-12 columns">
+        <img src="http://placehold.it/500x350" alt="">
+      </div>
+    </div>
+    <div class="row process-img">
+      <div class="medium-4 small-12 columns">
+        <img src="http://placehold.it/400x300" alt="">
+      </div>
+      <div class="medium-4 small-12 columns">
+        <img src="http://placehold.it/400x300" alt="">
+      </div>
+      <div class="medium-4 small-12 columns">
+        <img src="http://placehold.it/400x300" alt="">
+      </div>
+    </div>
+    <div class="row process-img">
+      <div class="medium-6 small-12 columns">
+        <img src="http://placehold.it/500x350" alt="">
+      </div>
+      <div class="medium-6 small-12 columns">
+        <img src="http://placehold.it/500x350" alt="">
+      </div>
+    </div>
+    <div class="row process-img">
+      <div class="medium-12 small-12 columns">
+        <img src="http://placehold.it/1000x350" alt="" />
+      </div>
+    </div>
+  </section>
+  <section id="more">
+    <div class="medium-12 small-12 columns text-center">
+      <h2 class="header">
+        <span>More</span>
+        <img src="../images/section-angles.svg">
+      </h2>
+    </div>
+    <div class="row">
+      <div class="medium-6 columns more-img">
+        <a href="7-tre-music.html"> <img src="http://placehold.it/500x350" alt=""> </a>
+      </div>
+      <div class="row show-for-small-only">
+        <div class="small-2 small-offset-4 columns">
+          <a href="7-tre-music.html" class="button">PREVIOUS PROJECT</a>
+        </div>
+      </div>
+      <div class="medium-6 columns more-img">
+        <a href="lees-lawn.html"> <img src="http://placehold.it/500x350" alt=""> </a>
+      </div>
+      <div class="row show-for-small-only">
+        <div class="small-2 small-offset-4 columns end">
+          <a href="lees-lawn.html" class="button">NEXT PROJECT</a>
+        </div>
+      </div>
+    </div>
+    <div class="row hidden-for-small-only">
+      <div class="medium-2 medium-offset-2 columns">
+        <a href="7-tre-music.html" class="button expand">Previous Project</a>
+      </div>
+      <div class="medium-2 medium-offset-4 columns end">
+        <a href="lees-lawn.html" class="button expand">Next Project</a>
+      </div>
+    </div>
+  </section>
+  <!--Footer-->
+  <footer>
+    <div class="row">
+      <div class="small-12 text-center columns">
+      	<img src="../images/zak-logo-inversed.svg" alt="Zak's Design inversed">
+      </div>
+      <div class="small-12 text-center columns">
+        <p>402.470.7042</p>
+        <a href="mailto:zschrunk@yahoo.com">zschrunk@yahoo.com</a>
+        <p>&copy; Zak Schrunk 2015</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../scripts/vendor/jquery.js"></script>
+  <script src="../scripts/foundation.min.js"></script>
+  <script src="../scripts/foundation/foundation.interchange.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 </body>
+
 </html>
