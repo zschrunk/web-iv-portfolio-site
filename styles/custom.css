@@ -5,11 +5,19 @@ body {
   font: normal 100 20pt "proxima-nova", sans-serif;
 }
 
+.uppercase{
+	text-transform: uppercase;
+}
+
+h1{
+	padding: 40px;
+}
+
 h2 {
   font: normal 900 75pt "proxima-nova-extra-condensed", sans-serif;
   position: relative;
-  font-size: 80px;
-  line-height: 80px;
+  font-size: 120px;
+  line-height: 100px;
   color: white;
   text-transform: uppercase;
 }
@@ -18,13 +26,12 @@ h2 img {
   width: 100%;
 }
 
-h3,
-h4 {
+h3, h4 {
   color: white;
+  text-transform: uppercase;
 }
 
-.project-title h3,
-h4 {
+.project-title h3, h4 {
   color: black;
 }
 
@@ -166,6 +173,16 @@ textarea {
   background-color: #26c1e5;
 }
 /*contact form end*/
+
+.thanks h2{
+	color: #2466b1;
+	margin-top: 250px;
+}
+
+.thanks a{
+	color: #2466b1;
+	margin-top: 100px;
+}
 
 ul,
 li {
@@ -420,6 +437,12 @@ nav#navigation ul li a:hover {
   nav#navigation ul li.last a:hover {
     border: 0;
   }
+  h2, .thanks h2 {
+  font-size: 70px;
+}
+ .thanks {
+	 margin-top: 50px;
+ }
 }
 
 @media only screen and (max-width: 500px) {
@@ -428,5 +451,8 @@ nav#navigation ul li a:hover {
   }
   h2 {
   font-size: 55px;
+}
+.process-img {
+  margin-top: 100px;
 }
 }
