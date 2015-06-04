@@ -450,9 +450,16 @@ nav#navigation ul li a:hover {
     width: 100%;
   }
   h2 {
-  font-size: 55px;
-}
-.process-img {
-  margin-top: 100px;
-}
+    font-size: 55px;
+  }
+  .header span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    margin-top: -50px;
+  }
+  .process-img {
+    margin-top: 100px;
+  }
 }
