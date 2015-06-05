@@ -45,6 +45,10 @@ h3, h4 {
 .process-img {
   margin-top: 100px;
 }
+
+#home img{
+	width: 100%;
+}
 /*Hover*/
 
 .header span {
@@ -153,7 +157,6 @@ textarea {
 
 :-moz-placeholder {
   /* Firefox 18- */
-  
   color: #26c1e5;
 }
 
